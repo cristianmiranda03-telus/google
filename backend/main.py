@@ -9,6 +9,12 @@ app = FastAPI(
 )
 
 
+@app.get("/")
+def root() -> dict:
+    """Root route so the Cloud Run URL does not return 404."""
+    return {"message": "CV Review API", "docs": "/docs", "health": "/health"}
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     """Liveness/readiness check for Cloud Run."""
