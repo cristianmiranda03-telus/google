@@ -1,0 +1,14 @@
+---
+description: Cloud Run deployment - region, service name, GitHub build config
+globs: "**/Dockerfile*,**/*cloudrun*,**/*.yaml,**/*.yml,Makefile"
+alwaysApply: false
+---
+
+# Cloud Run Deployment
+
+- **Region**: `europe-west1`
+- **Service name**: `goog-demo-cv0`
+- **GitHub**: Repository path `goog-ac/cv_review`; use GitHub connection for Cloud Build.
+- **Backend**: Build from `backend/` with `backend/Dockerfile`; base image `python:3.12-slim`; listen on `$PORT`.
+- **Frontend**: Build from `frontend/` with `frontend/Dockerfile`.
+- Use the project's `cloudrun/*.yaml` and Cloud Build config for exact build steps and deploy.

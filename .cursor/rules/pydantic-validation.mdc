@@ -1,0 +1,11 @@
+---
+description: Data validation with Pydantic v2 for API and config
+globs: "**/*.py,backend/**/*"
+alwaysApply: false
+---
+
+# Data Validation (Pydantic v2)
+
+- **All** incoming API requests, outgoing responses, and internal configuration MUST be typed with **Pydantic v2** `BaseModel`.
+- Use `model_config = ConfigDict(...)` and v2 patterns (e.g. `Field(description=...)`); avoid deprecated v1 patterns.
+- Validate at boundaries: request bodies, response models, env/settings loading.

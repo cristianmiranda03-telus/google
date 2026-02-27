@@ -1,0 +1,89 @@
+ALEX CHEN
+Senior Cloud Infrastructure & DevOps Engineer
+alex.chen@email.com | +1 (415) 555-0147 | San Francisco, CA
+LinkedIn: linkedin.com/in/alexchen-cloud | GitHub: github.com/alexchen
+
+─────────────────────────────────────────────────────────────────────
+
+PROFESSIONAL SUMMARY
+─────────────────────────────────────────────────────────────────────
+Cloud-native engineer with 8+ years of experience designing and operating large-scale infrastructure on Google Cloud Platform and AWS. Deep expertise in Kubernetes (GKE), Linux systems, container orchestration, DevOps/SRE practices, and network architecture. Strong background in Python automation, CI/CD pipelines, and observability platforms (Datadog, Prometheus, Grafana). Certified Google Cloud Professional Cloud Architect and Kubernetes Application Developer (CKAD). Client-facing communication in both English (native) and Mandarin (conversational).
+
+─────────────────────────────────────────────────────────────────────
+EXPERIENCE
+─────────────────────────────────────────────────────────────────────
+
+Senior Cloud Platform Engineer — Google (SRE/Infrastructure) | 2021 – Present
+- Lead a team of 5 SREs managing 200+ GKE clusters across 3 regions, ensuring 99.99% uptime SLA
+- Designed and deployed a multi-tenant Anthos service mesh using Istio, reducing inter-service latency by 35%
+- Built automated incident response pipelines using Cloud Functions and Pub/Sub, cutting MTTR from 45 min to 8 min
+- Defined and enforced networking policies (VPC, firewall rules, VPN, Cloud CDN, Cloud Load Balancing) for 15+ product teams
+- Migrated 60+ microservices from VMs to GKE, saving $2.1M/year in compute costs
+- Technologies: GKE, Anthos, Istio, Terraform, Helm, ArgoCD, Cloud SQL, Bigtable, Cloud Monitoring
+
+Cloud Infrastructure Engineer — Stripe | 2018 – 2021
+- Operated and scaled Kubernetes clusters (EKS + GKE) processing 500M+ transactions/day
+- Implemented blue/green and canary deployment strategies using ArgoCD and Spinnaker
+- Designed custom Prometheus exporters and Grafana dashboards for real-time payment pipeline observability
+- Automated Linux server provisioning and configuration management using Ansible and Terraform
+- Reduced deployment time from 45 minutes to 6 minutes via parallel CI/CD pipeline optimization
+- Technologies: Kubernetes, Docker, Terraform, Ansible, Prometheus, Grafana, Python, Go, Bash
+
+DevOps Engineer — Cloudflare | 2016 – 2018
+- Managed global BGP routing infrastructure spanning 200+ PoPs in 100 countries
+- Implemented TCP/IP troubleshooting tools and network packet analysis (tcpdump, Wireshark) for DDoS mitigation
+- Built DNS failover automation handling 50B+ DNS queries/day with sub-2ms response times
+- Developed internal tooling in Python to automate IP route management and VPN tunnel provisioning
+- Technologies: BGP, OSPF, anycast routing, DNS, IPSec VPN, Linux, Python, Go
+
+Systems Administrator — IBM | 2014 – 2016
+- Managed 300+ Linux (RHEL/Ubuntu) servers in hybrid cloud environments
+- Automated patch management and log monitoring using custom Bash/Python scripts
+- Implemented centralized logging with ELK stack and Splunk for compliance reporting
+- Designed backup and disaster recovery procedures for PostgreSQL and MySQL databases
+
+─────────────────────────────────────────────────────────────────────
+EDUCATION
+─────────────────────────────────────────────────────────────────────
+B.S. Computer Science — UC Berkeley, 2014
+Specialization: Distributed Systems and Networks
+
+─────────────────────────────────────────────────────────────────────
+CERTIFICATIONS
+─────────────────────────────────────────────────────────────────────
+- Google Cloud Professional Cloud Architect (2023)
+- Certified Kubernetes Application Developer — CKAD (2022)
+- Certified Kubernetes Administrator — CKA (2021)
+- HashiCorp Certified: Terraform Associate (2022)
+- AWS Certified Solutions Architect — Associate (2020)
+
+─────────────────────────────────────────────────────────────────────
+TECHNICAL SKILLS
+─────────────────────────────────────────────────────────────────────
+Container & Orchestration: Kubernetes (GKE, EKS, self-hosted), Docker, Helm, Istio, Anthos, containerd
+Cloud Platforms: Google Cloud Platform (GKE, Compute Engine, Cloud SQL, Pub/Sub, GCS, Cloud CDN), AWS (EC2, EKS, RDS, S3)
+Infrastructure as Code: Terraform, Ansible, Pulumi, Cloud Deployment Manager
+CI/CD: ArgoCD, Spinnaker, GitHub Actions, Jenkins, GitLab CI
+Networking: TCP/IP, BGP, OSPF, VPN (IPSec/WireGuard), DNS, Load Balancers, VPC, Firewall rules, Packet capture/analysis (tcpdump, Wireshark), CDN
+Observability: Prometheus, Grafana, Datadog, Splunk, OpenTelemetry, Cloud Monitoring, Cloud Logging
+Databases: PostgreSQL, MySQL, Cloud SQL, Bigtable, Redis
+Programming: Python (advanced), Go (intermediate), Bash (advanced), YAML/HCL
+Operating Systems: Linux (RHEL, Ubuntu, Debian) — advanced administration, kernel tuning, performance optimization
+Security: IAM policies, RBAC, mTLS, secret management (HashiCorp Vault, GCP Secret Manager)
+
+─────────────────────────────────────────────────────────────────────
+SOFT SKILLS & LANGUAGES
+─────────────────────────────────────────────────────────────────────
+- Excellent client-facing and stakeholder communication skills
+- Technical lead and mentor for junior engineers
+- Strong cross-functional collaboration across engineering, product, and security teams
+- English: Native proficiency
+- Mandarin: Conversational
+- Agile / Scrum practitioner (5+ years)
+
+─────────────────────────────────────────────────────────────────────
+NOTABLE PROJECTS
+─────────────────────────────────────────────────────────────────────
+- Open-source Kubernetes autoscaler plugin (GitHub: 800+ stars)
+- Wrote technical blog series on GKE cost optimization (50,000+ readers)
+- Speaker at KubeCon NA 2022: "Scaling Anthos in Production"

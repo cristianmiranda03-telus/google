@@ -1,0 +1,2215 @@
+[
+  {
+    "id": "7d7f1721-17b4-4055-9f57-8caeb0f5e691",
+    "filename": "MyCV.pdf",
+    "timestamp": "2026-02-18T19:44:55.889428",
+    "analysis_time_seconds": 188.48,
+    "api_calls": 18,
+    "total_tokens": 41396,
+    "model_used": "gemini-3-pro",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.2,
+        "Data": 4.5,
+        "Other": 2.0
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate demonstrates minimal exposure to core infrastructure domains such as compute, security, and DevOps, indicating a profile not focused on foundational cloud engineering.",
+        "Networking": "There is no significant evidence of networking expertise in edge computing or software-defined networking, reflecting a basic level of proficiency in this area.",
+        "Platform": "Experience with platform technologies is limited, with only basic familiarity in databases and no substantial background in container orchestration or serverless architectures.",
+        "Data": "The candidate exhibits a strong, high-level fit for this domain, with deep expertise in AI/ML engineering, generative AI implementation, and advanced data analytics strategies.",
+        "Other": "While proficiency in Looker and business intelligence is high, the candidate lacks significant experience in API management or security operations like detection and response."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 1,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "The candidate exhibits a strong, high-level fit for this domain, with deep expertise in AI/ML engineering, generative AI implementation, and advanced data analytics strategies.",
+      "education_list": [
+        "Master's degree, Inteligencia artificial, Tecnológico de Monterrey (2021–2024)",
+        "Global Exchange Program, Tsinghua University (2023)",
+        "Ingeniería en Ciencias Económicas y Financieras, Escuela Politécnica Nacional (2014–2019)",
+        "Certificado de Alta Especialidad: Inteligencia artificial y aprendizaje automático",
+        "Análisis Exploratorio de Datos y Automatización de Reportes Estadísticos",
+        "Pandas Certification",
+        "Unsupervised Learning in R",
+        "Working with Categorical Data in Python"
+      ],
+      "soft_skills_list": [
+        "Executive presentation",
+        "Stakeholder management",
+        "Strategic thinking",
+        "Project coordination",
+        "Business acumen",
+        "Technical communication",
+        "Innovation leadership"
+      ],
+      "previous_jobs_list": [
+        "AI Engineer — TELUS Digital (Jan 2026 – Present)",
+        "Artificial Intelligence (AI) Specialist — Movistar Ecuador (Sep 2024 – Dec 2025)",
+        "Senior Data Analyst - Strategy — Banco Pichincha (Dec 2023 – Aug 2024)",
+        "Data Engineer — TDW Group (Aug 2023 – Dec 2023)",
+        "Coordinador de Business Intelligence — Corporación GPF (Jul 2022 – Feb 2023)",
+        "Business Intelligence Analyst — Corporación GPF (May 2021 – Jul 2022)",
+        "Data and Visualization Analyst Consultant — Rochi Consulting (May 2021 – Mar 2022)",
+        "Coordinador de proyecto — Empresa Pública EPN-TECH E.P. (Dec 2019 – May 2021)",
+        "Asistente de investigación — Escuela Politécnica Nacional (Jun 2019 – Sep 2019)",
+        "Intern — PRODUBANCO (Nov 2018 – Dec 2018)"
+      ],
+      "candidate_summary": "Cristian is an experienced AI Engineer and Data Specialist with a Master's in Artificial Intelligence and a strong background in Business Intelligence (BI). His technical expertise centers on Generative AI, prompt engineering, and data modeling, demonstrated by his recent roles implementing GenAI solutions for collections and strategy at major telecom and banking organizations. He combines deep technical skills in Python, R, and algorithmic trading with the ability to lead BI initiatives and present strategic insights to executive leadership. His profile is highly specialized for data-centric roles rather than infrastructure or networking.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate holds a Master's in AI and has direct, recent professional experience implementing Generative AI solutions and prompt engineering, making him a perfect match for the AI/ML specialization.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 41396,
+        "avg_api_call_seconds": 10.47,
+        "model_used": "gemini-3-pro"
+      }
+    }
+  },
+  {
+    "id": "2601a7e1-78b4-4da6-b7c9-71a33a45c759",
+    "filename": "MM.pdf",
+    "timestamp": "2026-02-18T20:19:49.180619",
+    "analysis_time_seconds": 228.66,
+    "api_calls": 17,
+    "total_tokens": 44172,
+    "model_used": "gemini-3-pro",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.5,
+        "Data": 4.0,
+        "Other": 1.3
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate demonstrates minimal exposure to core infrastructure domains, with no significant experience in compute, DevOps, or container orchestration evident in the profile.",
+        "Networking": "The profile lacks specific networking expertise, showing no practical application of edge computing or software-defined networking technologies.",
+        "Platform": "Experience is limited to basic interactions with databases and storage solutions, likely incidental to data engineering tasks rather than core platform architecture.",
+        "Data": "The candidate exhibits a strong, high-level proficiency in AI and ML, evidenced by roles as an AI/ML Engineer and hands-on work with LLMs, RAG, and Vertex AI, supported by solid data analytics capabilities.",
+        "Other": "There is minor exposure to business intelligence tools like Looker, but the candidate lacks significant depth in API management or security operations."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 1,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 3,
+          "level": "Medium"
+        }
+      ],
+      "most_fitted_reason": "The candidate exhibits a strong, high-level proficiency in AI and ML, evidenced by roles as an AI/ML Engineer and hands-on work with LLMs, RAG, and Vertex AI, supported by solid data analytics capabilities.",
+      "education_list": [
+        "Master's degree, Internet of Things (IoT) — UNIR (2023–2024)",
+        "Master's degree, Inteligencia artificial (AI) — VIU - Universidad Internacional de Valencia (2018–2020)",
+        "Grado en Ingeniería, Ingeniería eléctrica y electrónica — Universidad Centroamericana José Simeón Cañas (2004–2010)",
+        "Agentic AI Certification",
+        "The Power of Object-Oriented Programming Certification"
+      ],
+      "soft_skills_list": [
+        "Strategic vision",
+        "Results-oriented",
+        "Multidisciplinary collaboration",
+        "Project management (large scale)",
+        "English proficiency (Full Professional)",
+        "Decision making",
+        "Innovation leadership",
+        "International team collaboration"
+      ],
+      "previous_jobs_list": [
+        "Artificial Intelligence Engineer — TELUS Digital (Nov 2025–Present)",
+        "Consultor de proyectos de ingeniería y transformación digital — IAIO (Oct 2020–Present)",
+        "Machine Learning Engineer — Applaudo (Sep 2024–Nov 2025)",
+        "Machine Learning Engineer — Almacenes SIMAN (Mar 2024–Sep 2024)",
+        "Data Scientist — Profesional independiente (Jan 2020–Mar 2023)",
+        "Engineering Trainee — Grupo Bimbo (May 2015–Dec 2019)",
+        "Supervisor de mantenimiento — Grupo Bimbo (Mar 2012–Jun 2015)",
+        "Programador de CNC — Visual Branding S.A. de C.V. (Jun 2011–Mar 2012)"
+      ],
+      "candidate_summary": "Marcelo is a multidisciplinary engineer with over 15 years of experience transitioning from electromechanical engineering to a strong focus on AI, Machine Learning, and IoT. His recent tenure includes roles as an AI and Machine Learning Engineer at TELUS Digital, Applaudo, and Almacenes SIMAN, where he specifically utilized Google Cloud Platform (Vertex AI, BigQuery ML, Dataflow) for scalable data pipelines and predictive models. He combines a solid academic background (Masters in AI and IoT) with practical experience in LLMs, RAG, and digital transformation in industrial settings. He is an excellent fit for roles requiring deep expertise in applied AI and data engineering on GCP.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate demonstrates a High (5/5) fit with direct, recent experience building ML pipelines on Google Cloud Platform (Vertex AI, BigQuery ML) and working with advanced concepts like LLMs and RAG.",
+      "metrics": {
+        "api_calls": 17,
+        "total_tokens": 44172,
+        "avg_api_call_seconds": 13.11,
+        "model_used": "gemini-3-pro"
+      }
+    }
+  },
+  {
+    "id": "857b17e9-7b7f-44b1-b296-3dafb5a337d2",
+    "filename": "RV.pdf",
+    "timestamp": "2026-02-18T20:38:21.297956",
+    "analysis_time_seconds": 194.25,
+    "api_calls": 15,
+    "total_tokens": 33642,
+    "model_used": "gemini-3-pro",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.2,
+        "Data": 1.5,
+        "Other": 2.3
+      },
+      "area_descriptions": {
+        "Infrastructure": "",
+        "Networking": "",
+        "Platform": "",
+        "Data": "",
+        "Other": ""
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 1,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Other",
+      "best_specializations": [
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 1,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_reason": "Strongest subarea expertise: Looker (High).",
+      "education_list": [
+        "Industrial Engineer — Universidad de El Salvador (2009–2014)",
+        "High School Diploma — Colegio Salesiano San José (2004–2007)",
+        "Applied Data Science Program: Leveraging AI for Effective Decision-Making",
+        "Joining Data in SQL Certification",
+        "Intro to SQL for Data Science Certification",
+        "Introduction to Python Certification"
+      ],
+      "soft_skills_list": [
+        "English proficiency (Full Professional)",
+        "Strategic decision-making support",
+        "Cross-functional collaboration",
+        "Team leadership and supervision",
+        "Conflict resolution",
+        "Data literacy promotion",
+        "Client-facing communication",
+        "Process optimization (Lean Manufacturing)"
+      ],
+      "previous_jobs_list": [
+        "Data Analyst — Applaudo (Sep 2022–Present)",
+        "Data Analyst — Almacenes Siman (Jun 2021–Nov 2022)",
+        "Data Scientist — JL Racing (Mar 2019–Jun 2021)",
+        "Quality Data Analyst — Hanes Brands (Nov 2015–Oct 2018)",
+        "Engineering Data Analyst — Hanesbrands (Feb 2015–Nov 2015)"
+      ],
+      "candidate_summary": "Summary generation failed: 429 Client Error: Too Many Requests for url: https://api.fuelix.ai/v1/chat/completions",
+      "recommended_role": "Other - Looker",
+      "recommendation_reason": "",
+      "metrics": {
+        "api_calls": 15,
+        "total_tokens": 33642,
+        "avg_api_call_seconds": 11.93,
+        "model_used": "gemini-3-pro"
+      }
+    }
+  },
+  {
+    "id": "d4b78f01-3ca6-4341-92e9-1e4e6987fd0f",
+    "filename": "RV.pdf",
+    "timestamp": "2026-02-24T14:27:35.202778",
+    "analysis_time_seconds": 203.83,
+    "api_calls": 18,
+    "total_tokens": 30958,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.8,
+        "Data": 4.0,
+        "Other": 2.7
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate's profile shows minimal exposure to core infrastructure components, with no professional experience in cloud compute, DevOps, or container orchestration.",
+        "Networking": "The candidate lacks documented experience in software-defined networking or edge computing, focusing instead on high-level data analysis.",
+        "Platform": "The candidate demonstrates a strong proficiency in Databases, specifically through extensive use of SQL and BigQuery to manage complex business logic and data transformations.",
+        "Data": "This is a core strength, as the candidate is a highly experienced Data Scientist and Analyst with deep expertise in AI/ML decision-making and advanced data analytics across multiple industries.",
+        "Other": "The candidate is an expert in Looker, utilizing it to design strategic dashboards and drive business intelligence, while also showing basic familiarity with fraud detection patterns."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is a core strength, as the candidate is a highly experienced Data Scientist and Analyst with deep expertise in AI/ML decision-making and advanced data analytics across multiple industries.",
+      "education_list": [
+        "Industrial Engineer, Universidad de El Salvador (2009 - 2014)",
+        "Applied Data Science Program: Leveraging AI for Effective Decision-Making",
+        "Joining Data in SQL Certification",
+        "Intro to SQL for Data Science Certification",
+        "Introduction to Python Certification",
+        "High School Diploma, Colegio Salesiano San José (2004 - 2007)"
+      ],
+      "soft_skills_list": [
+        "English proficiency (Full Professional)",
+        "Team leadership and supervision",
+        "Stakeholder management and advising",
+        "Data literacy advocacy",
+        "Strategic decision-making support",
+        "Conflict resolution",
+        "Lean Manufacturing principles",
+        "Cross-functional collaboration"
+      ],
+      "previous_jobs_list": [
+        "Data Analyst — Applaudo (September 2022 – Present)",
+        "Data Analyst — Almacenes Siman (June 2021 – November 2022)",
+        "Data Scientist — JL Racing (March 2019 – June 2021)",
+        "Quality Data Analyst — Hanes Brands (November 2015 – October 2018)",
+        "Engineering Data Analyst — Hanesbrands (February 2015 – November 2015)"
+      ],
+      "candidate_summary": "Ricardo is a Senior Data Analyst and Data Scientist with over 10 years of experience specializing in data transformation, visualization, and strategic decision support across retail, manufacturing, and supply chain sectors. He possesses deep technical expertise in SQL and Google BigQuery, complemented by a mastery of Looker for building complex business intelligence solutions. His background in industrial engineering and Lean Manufacturing, combined with his experience leading data teams, makes him an excellent fit for high-level data analytics and AI-driven insights roles within Google Cloud.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate has a perfect score (5) in Looker and extensive professional experience using it to drive business value, making him an ideal subject matter expert for this specific platform. His proficiency in BigQuery and SQL further solidifies his ability to handle the end-to-end data modeling and visualization lifecycle required for this role.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 30958,
+        "avg_api_call_seconds": 11.32,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "af2ad0f0-9f2b-4b71-9731-88cbed8d0fec",
+    "filename": "MM.pdf",
+    "timestamp": "2026-02-24T14:30:33.528592",
+    "analysis_time_seconds": 178.32,
+    "api_calls": 18,
+    "total_tokens": 34819,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.8,
+        "Networking": 1.0,
+        "Platform": 2.8,
+        "Data": 5.0,
+        "Other": 2.3
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate demonstrates basic foundational knowledge in infrastructure, with limited exposure to core compute, DevOps, and containerization technologies.",
+        "Networking": "The profile shows minimal experience in networking, with only basic familiarity in software-defined networking and edge computing concepts.",
+        "Platform": "The candidate is a strong fit for platform services, particularly in Databases and Serverless, supported by hands-on experience implementing scalable data pipelines and storage solutions on GCP.",
+        "Data": "This is the candidate's strongest area, featuring expert-level proficiency in AI, Machine Learning, and Data Analytics through extensive work with Vertex AI, BigQuery ML, and LLMs.",
+        "Other": "The candidate shows a medium level of proficiency in Looker for data visualization, complemented by basic experience in API management and security response."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 5,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is the candidate's strongest area, featuring expert-level proficiency in AI, Machine Learning, and Data Analytics through extensive work with Vertex AI, BigQuery ML, and LLMs.",
+      "education_list": [
+        "Master's degree, Internet of Things (IoT) — UNIR (2023–2024)",
+        "Master's degree, Inteligencia artificial (AI) — VIU - Universidad Internacional de Valencia (2018–2020)",
+        "Grado en Ingeniería, Ingeniería eléctrica y electrónica — Universidad Centroamericana José Simeón Cañas (2004–2010)",
+        "Certification: Agentic AI",
+        "Certification: The Power of Object-Oriented Programming"
+      ],
+      "soft_skills_list": [
+        "Full Professional English proficiency",
+        "Strategic vision and results-oriented",
+        "Multidisciplinary team collaboration",
+        "Project management and technical leadership",
+        "Digital transformation strategy",
+        "Large-scale industrial project execution",
+        "Cross-functional communication",
+        "Analytical decision making"
+      ],
+      "previous_jobs_list": [
+        "Artificial Intelligence Engineer — TELUS Digital (November 2025 – Present)",
+        "Consultor de proyectos de ingeniería y transformación digital — IAIO (October 2020 – Present)",
+        "Machine Learning Engineer — Applaudo (September 2024 – November 2025)",
+        "Machine Learning Engineer — Almacenes SIMAN (March 2024 – September 2024)",
+        "Data Scientist — Profesional independiente (January 2020 – March 2023)",
+        "Engineering Trainee — Grupo Bimbo (May 2015 – December 2019)",
+        "Supervisor de mantenimiento — Grupo Bimbo (March 2012 – June 2015)",
+        "Programador de CNC — Visual Branding S.A. de C.V. (June 2011 – March 2012)"
+      ],
+      "candidate_summary": "Marcelo is a highly experienced AI and Machine Learning Engineer with a strong background in deploying scalable data solutions on Google Cloud Platform, specifically using Vertex AI, BigQuery ML, and Dataflow. He possesses a unique blend of deep technical expertise in LLMs, RAG, and Agentic AI, alongside over 15 years of industrial engineering experience in IoT and automation. His proven track record of leading multi-million dollar digital transformation projects and developing predictive analytics for major retail and manufacturing firms makes him an exceptional fit for high-level technical roles within Google Cloud's data ecosystem.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate has a Master's in AI and extensive professional experience building production-grade generative AI and machine learning pipelines specifically on GCP (Vertex AI, BigQuery ML). His current focus on LLMs, RAG, and Agentic AI aligns perfectly with the highest priority requirements for this specialization.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 34819,
+        "avg_api_call_seconds": 9.9,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "345004e0-756e-4388-854f-838ceff29c4c",
+    "filename": "WB.pdf",
+    "timestamp": "2026-02-24T14:31:57.834879",
+    "analysis_time_seconds": 84.3,
+    "api_calls": 17,
+    "total_tokens": 19015,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.5,
+        "Data": 2.5,
+        "Other": 2.3
+      },
+      "area_descriptions": {
+        "Infrastructure": "",
+        "Networking": "",
+        "Platform": "",
+        "Data": "",
+        "Other": ""
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_reason": "The candidate's extensive experience in developing data dashboards, reporting techniques, and Business Intelligence (BI) aligns perfectly with the Looker specialization. His background as a Senior Business Analyst ensures he can effectively support enterprise customers in visualizing and modeling data.",
+      "education_list": [
+        "Grado en Ingeniería, Ingeniería industrial — Universidad de El Salvador (2016–2021)"
+      ],
+      "soft_skills_list": [
+        "Analytical capacity",
+        "Process mapping",
+        "Quality management systems",
+        "Scrum methodology",
+        "Project management",
+        "Business intelligence",
+        "Reporting techniques",
+        "Technical communication"
+      ],
+      "previous_jobs_list": [
+        "Sr Business Analyst IC — TELUS Digital (December 2024 – Present)",
+        "Senior Business Analyst — The Office Gurus (May 2024 – December 2024)",
+        "Business Analyst — The Office Gurus (August 2022 – May 2024)",
+        "Business Analyst — Teleperformance (January 2022 – July 2022)",
+        "Data-analyst — Teleperformance (July 2021 – July 2022)",
+        "Supervisor de operaciones — Reenfrio (February 2019 – February 2020)"
+      ],
+      "candidate_summary": "Williams Berrios is an experienced Senior Business Analyst and Industrial Engineer with a strong background in data analytics and business intelligence across the BPO and digital services sectors. He demonstrates high proficiency in relational database manipulation, dashboard development, and reporting techniques, complemented by a solid understanding of Scrum methodology and process improvement. His technical profile is well-suited for customer-facing support or analytical roles that require bridging the gap between complex data insights and business operations.",
+      "recommended_role": "Data - Data Analytics",
+      "recommendation_reason": "The candidate's extensive experience in developing data dashboards, reporting techniques, and Business Intelligence (BI) aligns perfectly with the Looker specialization. His background as a Senior Business Analyst ensures he can effectively support enterprise customers in visualizing and modeling data.",
+      "metrics": {
+        "api_calls": 17,
+        "total_tokens": 19015,
+        "avg_api_call_seconds": 4.53,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "7f6d1c92-06d1-4c4a-bbfc-d67f42a46fea",
+    "filename": "RV.pdf",
+    "timestamp": "2026-02-24T15:38:01.080185",
+    "analysis_time_seconds": 80.23,
+    "api_calls": 18,
+    "total_tokens": 30925,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.8,
+        "Data": 4.0,
+        "Other": 2.7
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate's profile shows minimal exposure to core infrastructure components, with no professional experience in cloud compute, DevOps, or container orchestration.",
+        "Networking": "The candidate lacks documented experience in software-defined networking or edge computing, focusing instead on high-level data analysis.",
+        "Platform": "The candidate demonstrates high proficiency in Databases, specifically utilizing BigQuery and advanced SQL to manage complex business logic and data transformations.",
+        "Data": "This is a core strength, as the candidate is a seasoned Data Scientist with high-level expertise in AI/ML for decision-making and extensive experience in large-scale Data Analytics.",
+        "Other": "The candidate is an expert in Looker, leveraging it for executive-level business intelligence and strategic dashboarding across multiple industries."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is a core strength, as the candidate is a seasoned Data Scientist with high-level expertise in AI/ML for decision-making and extensive experience in large-scale Data Analytics.",
+      "education_list": [
+        "Industrial Engineer, Universidad de El Salvador (2009 - 2014)",
+        "Applied Data Science Program: Leveraging AI for Effective Decision-Making",
+        "Joining Data in SQL Certification",
+        "Intro to SQL for Data Science Certification",
+        "Introduction to Python Certification",
+        "High School Diploma, Colegio Salesiano San José (2004 - 2007)"
+      ],
+      "soft_skills_list": [
+        "English proficiency (Full Professional)",
+        "Team leadership and supervision",
+        "Stakeholder management and advising",
+        "Data literacy advocacy",
+        "Strategic decision-making support",
+        "Conflict resolution",
+        "Lean Manufacturing principles",
+        "Cross-functional collaboration"
+      ],
+      "previous_jobs_list": [
+        "Data Analyst — Applaudo (septiembre de 2022 - Present)",
+        "Data Analyst — Almacenes Siman (junio de 2021 - noviembre de 2022)",
+        "Data Scientist — JL Racing (marzo de 2019 - junio de 2021)",
+        "Quality Data Analyst — Hanes Brands (noviembre de 2015 - octubre de 2018)",
+        "Engineering Data Analyst — Hanesbrands (febrero de 2015 - noviembre de 2015)"
+      ],
+      "candidate_summary": "Ricardo is a Senior Data Analyst and Data Scientist with over 10 years of experience specializing in SQL, BigQuery, and Looker across retail, manufacturing, and supply chain sectors. He demonstrates a strong ability to transform complex raw data into strategic insights and has a proven track record of building high-impact dashboards for executive decision-making. His background in industrial engineering and lean manufacturing, combined with his technical proficiency in Google Cloud data tools, makes him an excellent fit for data-centric support or consulting roles.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate has extensive professional experience building dashboards and enabling self-service analytics specifically using Looker, earning him a perfect score of 5 in this specialization. His ability to bridge the gap between complex SQL data modeling and executive-level visualization aligns perfectly with a Looker-focused technical role.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 30925,
+        "avg_api_call_seconds": 4.45,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "50de622f-3abc-44c0-b3a2-18cebb481b17",
+    "filename": "MM.pdf",
+    "timestamp": "2026-02-24T15:40:45.281432",
+    "analysis_time_seconds": 164.19,
+    "api_calls": 18,
+    "total_tokens": 34857,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.8,
+        "Networking": 1.0,
+        "Platform": 2.8,
+        "Data": 5.0,
+        "Other": 2.3
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate demonstrates basic foundational knowledge in infrastructure, with limited exposure to core compute and DevOps practices compared to their primary focus areas.",
+        "Networking": "The profile shows minimal experience in networking, with basic familiarity that does not extend to specialized SDN or Edge computing architectures.",
+        "Platform": "The candidate is a strong fit for data-centric platforms, showing high proficiency in Databases and a solid medium-level grasp of Serverless technologies for application deployment.",
+        "Data": "This is the candidate's strongest area, featuring expert-level mastery of AI, ML, and Data Analytics through extensive experience with Vertex AI, BigQuery ML, and LLM development.",
+        "Other": "The candidate possesses a balanced profile in auxiliary tools, highlighted by a medium-level proficiency in Looker for data visualization and basic exposure to API management and security response."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 5,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is the candidate's strongest area, featuring expert-level mastery of AI, ML, and Data Analytics through extensive experience with Vertex AI, BigQuery ML, and LLM development.",
+      "education_list": [
+        "Master's degree, Internet of Things (IoT), UNIR (2023 - 2024)",
+        "Master's degree, Inteligencia artificial (AI), VIU - Universidad Internacional de Valencia (2018 - 2020)",
+        "Grado en Ingeniería, Ingeniería eléctrica y electrónica, Universidad Centroamericana José Simeón Cañas (2004 - 2010)",
+        "Certification: Agentic AI",
+        "Certification: The Power of Object-Oriented Programming"
+      ],
+      "soft_skills_list": [
+        "Full Professional English proficiency",
+        "Strategic vision and results-oriented",
+        "Multidisciplinary team collaboration",
+        "Project management and technical leadership",
+        "Digital transformation strategy",
+        "Complex industrial problem solving",
+        "Cross-functional communication",
+        "Analytical decision making"
+      ],
+      "previous_jobs_list": [
+        "Artificial Intelligence Engineer — TELUS Digital (noviembre de 2025 - Present)",
+        "Consultor de proyectos de ingeniería y transformación digital — IAIO (octubre de 2020 - Present)",
+        "Machine Learning Engineer — Applaudo (septiembre de 2024 - noviembre de 2025)",
+        "Machine Learning Engineer — Almacenes SIMAN (marzo de 2024 - septiembre de 2024)",
+        "Data Scientist — Profesional independiente (enero de 2020 - marzo de 2023)",
+        "Engineering Trainee / Project Engineer — Grupo Bimbo (mayo de 2015 - diciembre de 2019)",
+        "Supervisor de mantenimiento — Grupo Bimbo (marzo de 2012 - junio de 2015)",
+        "Programador de CNC — Visual Branding S.A. de C.V. (junio de 2011 - marzo de 2012)"
+      ],
+      "candidate_summary": "Marcelo is a highly experienced AI and Machine Learning Engineer with a strong background in deploying scalable data solutions on Google Cloud Platform, specifically using Vertex AI, BigQuery ML, and Dataflow. He possesses a unique blend of deep technical expertise in LLMs, RAG, and Agentic AI, alongside over 15 years of industrial engineering experience in IoT and automation. His proven track record of leading high-impact digital transformation projects and building predictive models for large-scale enterprises makes him an exceptional fit for advanced technical roles within Google Cloud's data and AI ecosystems.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate has a Master's in AI and extensive professional experience building production-grade generative AI and machine learning pipelines specifically using Google Cloud's Vertex AI and BigQuery ML. His current focus on LLMs, RAG, and Agentic AI aligns perfectly with the highest priority requirements for this specialization.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 34857,
+        "avg_api_call_seconds": 9.11,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "1ba9a047-98a4-4647-8d84-cf68d024e82c",
+    "filename": "sample_cv_alex_chen.txt",
+    "timestamp": "2026-02-26T19:49:23.970999",
+    "analysis_time_seconds": 357.14,
+    "api_calls": 18,
+    "total_tokens": 49341,
+    "model_used": "gemini-3-pro",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 5.0,
+        "Networking": 5.0,
+        "Platform": 3.8,
+        "Data": 1.0,
+        "Other": 3.3
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate demonstrates exceptional expertise in Compute, DevOps, and Containers, evidenced by their leadership in managing 200+ GKE clusters and implementing advanced CI/CD pipelines with ArgoCD and Terraform. Their strong background in Linux systems administration and security practices further solidifies their high proficiency in core infrastructure operations.",
+        "Networking": "With a robust history at Cloudflare managing global BGP routing and DDoS mitigation, the candidate shows advanced capabilities in Edge networking and SDN. Their experience designing service meshes with Istio and enforcing VPC policies confirms a deep, high-level understanding of complex network architectures.",
+        "Platform": "The candidate is highly specialized in GKE, Anthos, and Storage, having successfully migrated microservices and designed multi-tenant service meshes, though their experience with Serverless architectures is more limited. While they possess solid operational knowledge of Cloud SQL and Bigtable, their database expertise is rated at a medium level compared to their mastery of container platforms.",
+        "Data": "The candidate's profile is primarily focused on infrastructure and operations rather than data science, resulting in a basic proficiency level for AI, ML, and Data Analytics. There is little evidence of significant work with data modeling, machine learning pipelines, or advanced analytics tools in their professional history.",
+        "Other": "They exhibit strong proficiency in Apigee and Detection & Response, likely derived from their work on API gateways and automated incident response pipelines. However, their experience with business intelligence tools like Looker is minimal, reflecting a focus on backend engineering over data visualization."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 4,
+          "level": "High"
+        }
+      ],
+      "most_fitted_area": "Infrastructure",
+      "best_specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 5,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "The candidate demonstrates exceptional expertise in Compute, DevOps, and Containers, evidenced by their leadership in managing 200+ GKE clusters and implementing advanced CI/CD pipelines with ArgoCD and Terraform. Their strong background in Linux systems administration and security practices further solidifies their high proficiency in core infrastructure operations.",
+      "education_list": [
+        "B.S. Computer Science — UC Berkeley (2014)",
+        "Google Cloud Professional Cloud Architect (2023)",
+        "Certified Kubernetes Application Developer — CKAD (2022)",
+        "Certified Kubernetes Administrator — CKA (2021)",
+        "HashiCorp Certified: Terraform Associate (2022)",
+        "AWS Certified Solutions Architect — Associate (2020)"
+      ],
+      "soft_skills_list": [
+        "Client-facing communication",
+        "Team leadership and mentoring",
+        "Cross-functional collaboration",
+        "English proficiency (Native)",
+        "Mandarin proficiency (Conversational)",
+        "Agile / Scrum practitioner",
+        "Public speaking (KubeCon speaker)",
+        "Technical writing (Blog author)"
+      ],
+      "previous_jobs_list": [
+        "Senior Cloud Platform Engineer — Google (2021 – Present)",
+        "Cloud Infrastructure Engineer — Stripe (2018 – 2021)",
+        "DevOps Engineer — Cloudflare (2016 – 2018)",
+        "Systems Administrator — IBM (2014 – 2016)"
+      ],
+      "candidate_summary": "Alex Chen is a distinguished Cloud Platform Engineer with 8+ years of experience, currently serving as an SRE at Google with prior key roles at Stripe and Cloudflare. He possesses elite proficiency in Kubernetes (GKE/Anthos), advanced networking (BGP, SDN), and DevOps automation, supported by CKA/CKAD certifications and public speaking at KubeCon. His ability to manage massive-scale clusters and optimize multi-tenant architectures makes him a top-tier candidate for complex engineering and support challenges.",
+      "recommended_role": "Infrastructure - Compute",
+      "recommendation_reason": "Alex demonstrates elite expertise in Kubernetes ecosystems, evidenced by his management of 200+ GKE clusters, implementation of Anthos service meshes, and his role as a KubeCon speaker on scaling Anthos. This specific depth makes him an immediate subject matter expert for this specialization, surpassing general infrastructure roles.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 49341,
+        "avg_api_call_seconds": 19.83,
+        "model_used": "gemini-3-pro"
+      }
+    }
+  },
+  {
+    "id": "193bfdcd-db70-4bb3-bfea-9c7cd35e8f83",
+    "filename": "RV.pdf",
+    "timestamp": "2026-02-26T20:28:17.412851",
+    "analysis_time_seconds": 234.69,
+    "api_calls": 17,
+    "total_tokens": 29278,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.8,
+        "Data": 4.0,
+        "Other": 2.7
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate's profile shows minimal exposure to core infrastructure domains like Compute, DevOps, or Containers, focusing instead on high-level data applications.",
+        "Networking": "There is no evidence of experience with Software Defined Networking or Edge technologies in the candidate's professional background.",
+        "Platform": "The candidate demonstrates a high level of proficiency in Databases, specifically utilizing SQL and BigQuery to manage complex business logic and data transformations.",
+        "Data": "This is a core strength, with the candidate showing high expertise in Data Analytics and AI/ML through extensive experience in supply chain analytics, fraud detection, and predictive decision-making.",
+        "Other": "The candidate is a high-level expert in Looker, leveraging it for over a decade to design strategic dashboards and drive self-service analytics adoption across multiple industries."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is a core strength, with the candidate showing high expertise in Data Analytics and AI/ML through extensive experience in supply chain analytics, fraud detection, and predictive decision-making.",
+      "education_list": [
+        "Industrial Engineer, Universidad de El Salvador (2009 - 2014)",
+        "Applied Data Science Program: Leveraging AI for Effective Decision-Making",
+        "Joining Data in SQL Certification",
+        "Intro to SQL for Data Science Certification",
+        "Introduction to Python Certification",
+        "High School Diploma, Colegio Salesiano San José (2004 - 2007)"
+      ],
+      "soft_skills_list": [
+        "English proficiency (Full Professional)",
+        "Team leadership and supervision",
+        "Stakeholder management and advising",
+        "Data literacy advocacy",
+        "Strategic decision-making support",
+        "Conflict resolution",
+        "Continuous improvement (Lean Manufacturing)",
+        "Cross-functional collaboration"
+      ],
+      "previous_jobs_list": [
+        "Data Analyst — Applaudo (septiembre de 2022 - Present)",
+        "Data Analyst — Almacenes Siman (junio de 2021 - noviembre de 2022)",
+        "Data Scientist — JL Racing (marzo de 2019 - junio de 2021)",
+        "Quality Data Analyst — Hanes Brands (noviembre de 2015 - octubre de 2018)",
+        "Engineering Data Analyst — Hanesbrands (febrero de 2015 - noviembre de 2015)"
+      ],
+      "candidate_summary": "Ricardo is a Senior Data Analyst and Data Scientist with over 10 years of experience specializing in SQL, BigQuery, and Looker across retail, manufacturing, and supply chain sectors. He demonstrates a strong ability to transform complex raw data into strategic insights through advanced visualization and custom business logic. His background in Lean Manufacturing and his 'Applied Data Science' certification in AI for decision-making make him a highly versatile candidate for data-driven roles. He is an excellent fit for Google Cloud support or engineering teams focused on Business Intelligence and large-scale data analytics.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate has a perfect score (5) in Looker and extensive professional experience using it alongside BigQuery to build executive-level dashboards. His deep expertise in SQL and data visualization aligns perfectly with the technical requirements for a Looker specialist.",
+      "metrics": {
+        "api_calls": 17,
+        "total_tokens": 29278,
+        "avg_api_call_seconds": 6.47,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "df607cc3-708b-45c9-8352-bcf1cb46eca4",
+    "filename": "WB.pdf",
+    "timestamp": "2026-02-26T20:29:58.920938",
+    "analysis_time_seconds": 101.41,
+    "api_calls": 18,
+    "total_tokens": 20117,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.5,
+        "Data": 2.0,
+        "Other": 2.0
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate lacks professional experience in cloud infrastructure, compute, or DevOps, showing only foundational knowledge in these areas.",
+        "Networking": "There is no evidence of experience with software-defined networking or edge computing, placing the candidate at a basic level for this area.",
+        "Platform": "The candidate demonstrates a solid medium-level proficiency in relational database manipulation and management, though they lack experience with GKE or serverless platforms.",
+        "Data": "While experienced in business intelligence and reporting, the candidate's background in advanced AI/ML and large-scale data engineering is currently at a basic stage.",
+        "Other": "The candidate is a high-level specialist in Looker and business intelligence, with a strong track record of developing sophisticated data dashboards and reports."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 1,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Other",
+      "best_specializations": [
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 1,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_reason": "The candidate is a high-level specialist in Looker and business intelligence, with a strong track record of developing sophisticated data dashboards and reports.",
+      "education_list": [
+        "Grado en Ingeniería, Ingeniería industrial — Universidad de El Salvador (2016–2021)"
+      ],
+      "soft_skills_list": [
+        "Analytical capacity",
+        "Process mapping",
+        "Quality management systems",
+        "Scrum methodology",
+        "Project management",
+        "Business intelligence",
+        "Reporting techniques",
+        "Technical communication"
+      ],
+      "previous_jobs_list": [
+        "Sr Business Analyst IC — TELUS Digital (December 2024 – Present)",
+        "Senior Business Analyst — The Office Gurus (May 2024 – December 2024)",
+        "Business Analyst — The Office Gurus (August 2022 – May 2024)",
+        "Business Analyst — Teleperformance (January 2022 – July 2022)",
+        "Data-analyst — Teleperformance (July 2021 – July 2022)",
+        "Supervisor de operaciones — Reenfrio (February 2019 – February 2020)"
+      ],
+      "candidate_summary": "Williams Berrios is an experienced Senior Business Analyst and Industrial Engineer with a strong background in data visualization and relational database management. He has a proven track record of developing complex data dashboards and reports within the BPO and digital services sectors, utilizing a mix of technical analysis and Scrum methodology. His expertise in business intelligence and process improvement makes him a high-potential candidate for customer-facing technical roles that bridge the gap between data insights and business strategy.",
+      "recommended_role": "Other - Looker",
+      "recommendation_reason": "The candidate's extensive experience in developing data dashboards, reporting techniques, and business intelligence aligns perfectly with the Looker specialization. His background as a Senior Business Analyst ensures he can handle the complex data modeling and visualization requirements central to the Looker ecosystem.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 20117,
+        "avg_api_call_seconds": 5.55,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "101ca578-0f68-4da1-aa69-811c41cbf562",
+    "filename": "RV.pdf",
+    "timestamp": "2026-02-26T22:01:40.466672",
+    "analysis_time_seconds": 54.05,
+    "api_calls": 18,
+    "total_tokens": 30938,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.0,
+        "Networking": 1.0,
+        "Platform": 1.8,
+        "Data": 4.0,
+        "Other": 2.7
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate's profile shows minimal exposure to core infrastructure components, with no professional experience in cloud compute, DevOps, or container orchestration.",
+        "Networking": "The candidate lacks documented experience in software-defined networking or edge computing, focusing instead on high-level data analysis.",
+        "Platform": "The candidate demonstrates high proficiency in Databases, specifically utilizing SQL and BigQuery to manage complex business logic and data transformations across multiple industries.",
+        "Data": "This is a core strength, as the candidate is a seasoned Data Scientist with high-level expertise in AI/ML decision-making and advanced data analytics for supply chain and retail.",
+        "Other": "The candidate is a subject matter expert in Looker, possessing a high level of skill in designing sophisticated dashboards and enabling self-service BI for executive-level decision-making."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 4,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is a core strength, as the candidate is a seasoned Data Scientist with high-level expertise in AI/ML decision-making and advanced data analytics for supply chain and retail.",
+      "education_list": [
+        "Industrial Engineer, Universidad de El Salvador (2009 - 2014)",
+        "Applied Data Science Program: Leveraging AI for Effective Decision-Making",
+        "Joining Data in SQL Certification",
+        "Intro to SQL for Data Science Certification",
+        "Introduction to Python Certification",
+        "High School Diploma, Colegio Salesiano San José (2004 - 2007)"
+      ],
+      "soft_skills_list": [
+        "English proficiency (Full Professional)",
+        "Strategic decision-making support",
+        "Team leadership and supervision",
+        "Stakeholder advising",
+        "Data literacy coaching",
+        "Conflict resolution",
+        "Continuous improvement (Lean Manufacturing)",
+        "Cross-functional collaboration"
+      ],
+      "previous_jobs_list": [
+        "Data Analyst — Applaudo (septiembre de 2022 - Present)",
+        "Data Analyst — Almacenes Siman (junio de 2021 - noviembre de 2022)",
+        "Data Scientist — JL Racing (marzo de 2019 - junio de 2021)",
+        "Quality Data Analyst — Hanes Brands (noviembre de 2015 - octubre de 2018)",
+        "Engineering Data Analyst — Hanesbrands (febrero de 2015 - noviembre de 2015)"
+      ],
+      "candidate_summary": "Ricardo is a Senior Data Analyst and Data Scientist with over 10 years of experience specializing in SQL, BigQuery, and advanced business intelligence tools like Looker and Power BI. He has a proven track record of transforming complex datasets into strategic insights across retail, manufacturing, and supply chain sectors, including high-impact projects for Walmart US. His background in industrial engineering and Lean Manufacturing, combined with certifications in AI for decision-making, makes him an excellent fit for data-centric Google Cloud support or engineering roles.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate demonstrates expert-level proficiency in Looker and BigQuery, backed by a decade of experience building complex dashboards and data models. His specific expertise in Looker and SQL-based data transformation aligns perfectly with the technical requirements for a Looker specialist role.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 30938,
+        "avg_api_call_seconds": 2.99,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  },
+  {
+    "id": "3184c021-2ef4-4890-8fb2-4ac07fb23463",
+    "filename": "MM.pdf",
+    "timestamp": "2026-02-26T22:02:42.266206",
+    "analysis_time_seconds": 61.78,
+    "api_calls": 18,
+    "total_tokens": 35017,
+    "model_used": "gemini-3-flash",
+    "human_review_minutes": 45,
+    "result": {
+      "area_scores": {
+        "Infrastructure": 1.8,
+        "Networking": 1.0,
+        "Platform": 2.8,
+        "Data": 5.0,
+        "Other": 2.7
+      },
+      "area_descriptions": {
+        "Infrastructure": "The candidate demonstrates basic foundational knowledge in compute and DevOps, primarily through the lens of industrial automation and general cloud usage rather than specialized infrastructure engineering.",
+        "Networking": "The profile shows minimal exposure to software-defined networking or edge computing, with experience limited to basic connectivity for IoT and industrial systems.",
+        "Platform": "The candidate is a strong fit for data-centric platforms, showing high proficiency in managed databases and medium-level serverless experience, particularly within the Google Cloud ecosystem.",
+        "Data": "This is the candidate's strongest area, featuring expert-level mastery of AI, ML, and Data Analytics through extensive work with Vertex AI, LLMs, and BigQuery ML in large-scale industrial and retail environments.",
+        "Other": "The candidate shows high proficiency in Looker for data visualization and business intelligence, complemented by basic exposure to API management and security response protocols."
+      },
+      "specializations": [
+        {
+          "area": "Infrastructure",
+          "specialization": "Compute",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "DevOps",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Security",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Infrastructure",
+          "specialization": "Containers",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "Edge",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Networking",
+          "specialization": "SDN",
+          "score": 1,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Databases",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Platform",
+          "specialization": "GKE & Anthos",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Storage",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Platform",
+          "specialization": "Serverless",
+          "score": 3,
+          "level": "Medium"
+        },
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Apigee",
+          "score": 2,
+          "level": "Basic"
+        },
+        {
+          "area": "Other",
+          "specialization": "Looker",
+          "score": 4,
+          "level": "High"
+        },
+        {
+          "area": "Other",
+          "specialization": "Detection & Response",
+          "score": 2,
+          "level": "Basic"
+        }
+      ],
+      "most_fitted_area": "Data",
+      "best_specializations": [
+        {
+          "area": "Data",
+          "specialization": "AI and ML",
+          "score": 5,
+          "level": "High"
+        },
+        {
+          "area": "Data",
+          "specialization": "Data Analytics",
+          "score": 5,
+          "level": "High"
+        }
+      ],
+      "most_fitted_reason": "This is the candidate's strongest area, featuring expert-level mastery of AI, ML, and Data Analytics through extensive work with Vertex AI, LLMs, and BigQuery ML in large-scale industrial and retail environments.",
+      "education_list": [
+        "Master's degree, Internet of Things (IoT) — UNIR (2023 - 2024)",
+        "Master's degree, Inteligencia artificial (AI) — VIU - Universidad Internacional de Valencia (2018 - 2020)",
+        "Grado en Ingeniería, Ingeniería eléctrica y electrónica — Universidad Centroamericana José Simeón Cañas (2004 - 2010)",
+        "Certification: Agentic AI",
+        "Certification: The Power of Object-Oriented Programming"
+      ],
+      "soft_skills_list": [
+        "Full Professional English proficiency",
+        "Strategic vision and results-oriented",
+        "Multidisciplinary team collaboration",
+        "Large-scale project management",
+        "Technical leadership",
+        "Digital transformation strategy",
+        "Cross-functional communication",
+        "Analytical decision making"
+      ],
+      "previous_jobs_list": [
+        "Artificial Intelligence Engineer — TELUS Digital (noviembre de 2025 - Present)",
+        "Consultor de proyectos de ingeniería y transformación digital — IAIO (octubre de 2020 - Present)",
+        "Machine Learning Engineer — Applaudo (septiembre de 2024 - noviembre de 2025)",
+        "Machine Learning Engineer — Almacenes SIMAN (marzo de 2024 - septiembre de 2024)",
+        "Data Scientist — Profesional independiente (enero de 2020 - marzo de 2023)",
+        "Engineering Trainee / Project Engineer — Grupo Bimbo (mayo de 2015 - diciembre de 2019)",
+        "Supervisor de mantenimiento — Grupo Bimbo (marzo de 2012 - junio de 2015)",
+        "Programador de CNC — Visual Branding S.A. de C.V. (junio de 2011 - marzo de 2012)"
+      ],
+      "candidate_summary": "Marcelo is a highly experienced AI and Machine Learning Engineer with a robust background in industrial digital transformation and cloud-native data solutions. He demonstrates expert-level proficiency in Google Cloud Platform tools, specifically Vertex AI, BigQuery ML, and Dataflow, alongside advanced skills in LLMs, RAG, and Agentic AI. With over 15 years of multidisciplinary engineering experience, he excels at bridging the gap between complex data science models and large-scale industrial applications, making him an exceptional fit for high-level technical roles in AI and Data Analytics.",
+      "recommended_role": "Data - AI and ML",
+      "recommendation_reason": "The candidate has a proven track record of deploying production-grade machine learning models on Vertex AI and holds advanced degrees specifically in AI and IoT. His recent experience as an AI Engineer and Machine Learning Engineer directly aligns with the highest technical requirements of this specialization.",
+      "metrics": {
+        "api_calls": 18,
+        "total_tokens": 35017,
+        "avg_api_call_seconds": 3.42,
+        "model_used": "gemini-3-flash"
+      }
+    }
+  }
+]

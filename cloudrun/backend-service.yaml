@@ -1,0 +1,32 @@
+# Cloud Run service: goog-demo-cv0 (backend)
+# Region: europe-west1 | Deploy via GitHub-connected Cloud Build or: gcloud run services replace cloudrun/backend-service.yaml --region=europe-west1
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: goog-demo-cv0
+  labels:
+    cloud.googleapis.com/location: europe-west1
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"
+        autoscaling.knative.dev/maxScale: "10"
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 300
+      containers:
+      - image: europe-west1-docker.pkg.dev/PROJECT_ID/cv_review/backend:latest
+        ports:
+        - name: http1
+          containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        resources:
+          limits:
+            cpu: "1"
+            memory: 512Mi
+  traffic:
+  - percent: 100
+    latestRevision: true

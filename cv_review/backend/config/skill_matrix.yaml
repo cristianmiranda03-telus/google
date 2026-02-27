@@ -1,0 +1,445 @@
+# Skill matrix for Google Team roles - Areas and Specializations
+# Each skill has: requirement (Mandatory/Needed/Nice-to-have) and level (Basic/Intermediate/Advanced)
+
+areas:
+  Infrastructure:
+    specializations:
+      Compute:
+        core_skills:
+          Databases: { requirement: Mandatory, level: Advanced }
+          "Command line": { requirement: Mandatory, level: Advanced }
+          "System, constraints, how linux works": { requirement: Mandatory, level: Advanced }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Intermediate }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Intermediate }
+          DNS: { requirement: Needed, level: Intermediate }
+          "IP routing": { requirement: Needed, level: Intermediate }
+        additional:
+          "Linux Troubleshooting": Advanced
+          "Linux Logging and Monitoring": Intermediate
+          "Linux Package Management": Intermediate
+          "File System and Device Management": Intermediate
+          "Linux Boot process": Intermediate
+          "Linux Networking": Intermediate
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      DevOps:
+        core_skills:
+          Coding: { requirement: Needed, level: Basic }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Intermediate }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Intermediate }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Intermediate }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "Observability and Telemetry": Intermediate
+          "Linux Troubleshooting": Intermediate
+          "Linux Logging and Monitoring": Intermediate
+          Statistics: Basic
+          SQL: Basic
+          "Previous Experience with Industry Solutions (Splunk, DataDog, Grafana, Nagios, Prometheus, Dynatrace)": Basic
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      Security:
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          Coding: { requirement: Needed, level: Basic }
+          Testing: { requirement: Needed, level: Basic }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Basic }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Intermediate }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Basic }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "General Cloud Security Best Practices": Intermediate
+          "Infrastructure as code": Basic
+          "Authentication Technologies": Basic
+          "Authorization Models": Basic
+          "Cyber Security Risks": Intermediate
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      Containers:
+        core_skills:
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Mandatory, level: Advanced }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Mandatory, level: Advanced }
+          "TCP/IP troubleshooting": { requirement: Mandatory, level: Advanced }
+          DNS: { requirement: Mandatory, level: Advanced }
+          "IP routing": { requirement: Mandatory, level: Advanced }
+        additional:
+          Docker: Basic
+          Kubernetes: Advanced
+          "Container Networking": Advanced
+          Istio: Advanced
+          "Load Balancers": Advanced
+          "Systems Architecture and Infrastructure": Intermediate
+          "Packet Capture/Analysis Tools (tcpdump/wireshark)": Advanced
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+  Networking:
+    specializations:
+      Edge:
+        core_skills:
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Intermediate }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Mandatory, level: Advanced }
+          "TCP/IP troubleshooting": { requirement: Mandatory, level: Advanced }
+          DNS: { requirement: Mandatory, level: Advanced }
+          "IP routing": { requirement: Mandatory, level: Advanced }
+        additional:
+          "Interconnect/On prem-NW": Advanced
+          VPN: Advanced
+          "Routing/BGP": Advanced
+          "Load Balancers": Advanced
+          CDN: Advanced
+          DNS: Advanced
+          "Packet Capture/Analysis Tools (tcpdump/wireshark)": Advanced
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      SDN:
+        core_skills:
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Intermediate }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Mandatory, level: Advanced }
+          "TCP/IP troubleshooting": { requirement: Mandatory, level: Advanced }
+          DNS: { requirement: Mandatory, level: Advanced }
+          "IP routing": { requirement: Mandatory, level: Advanced }
+        additional:
+          "SDN (Any NSX, ACI etc)": Advanced
+          "Virtual Networking": Advanced
+          NAT: Advanced
+          Firewalls: Advanced
+          "IDS and Network Security": Intermediate
+          "Systems Architecture and Infrastructure": Advanced
+          "Packet Capture/Analysis Tools (tcpdump/wireshark)": Advanced
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+  Platform:
+    specializations:
+      Databases:
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          Coding: { requirement: Needed, level: Basic }
+          Data: { requirement: Mandatory, level: Advanced }
+          Databases: { requirement: Mandatory, level: Advanced }
+          "Analysis techniques": { requirement: Mandatory, level: Advanced }
+          "Command line": { requirement: Needed, level: Basic }
+          "System, constraints, how linux works": { requirement: Needed, level: Basic }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTML / CSS / JS": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Intermediate }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "Python or Java or SQL (All is a bonus)": Advanced
+          "Hands-on experience with Databases (any)": Advanced
+          "Analytical skills, reading and breaking down issues and code": Advanced
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      "GKE & Anthos":
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          Coding: { requirement: Needed, level: Basic }
+          "System Design / scaling": { requirement: Needed, level: Basic }
+          "Linux / UNIX": { requirement: Mandatory, level: Advanced }
+          "Command line": { requirement: Mandatory, level: Advanced }
+          "System, constraints, how linux works": { requirement: Mandatory, level: Advanced }
+        web_networking:
+          "APIs / System Design": { requirement: Mandatory, level: Advanced }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTML / CSS / JS": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Mandatory, level: Advanced }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Intermediate }
+          DNS: { requirement: Needed, level: Intermediate }
+          "IP routing": { requirement: Needed, level: Intermediate }
+        additional:
+          Docker: "Needed - Advanced"
+          Kubernetes: "Needed - Advanced"
+          "Systems Architecture and Infrastructure": Advanced
+          "Analytical skills, reading and breaking down issues and code": Advanced
+          "Observability and Telemetry": Advanced
+          "Linux Logging and Monitoring": Intermediate
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      Storage:
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          "Algorithms & Data Structures": { requirement: Needed, level: Basic }
+          Coding: { requirement: Needed, level: Basic }
+          "System Design / scaling": { requirement: Mandatory, level: Advanced }
+          Testing: { requirement: Needed, level: Intermediate }
+          Data: { requirement: Needed, level: Intermediate }
+          Databases: { requirement: Needed, level: Intermediate }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Analysis techniques": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Basic }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Intermediate }
+          "HTTP and Auth": { requirement: Mandatory, level: Advanced }
+          "Webservers & frameworks": { requirement: Needed, level: Intermediate }
+          Networking: { requirement: Mandatory, level: Advanced }
+        additional:
+          "Python or Java (both is a bonus)": Advanced
+          "Analytical skills, reading and breaking down issues and code": Advanced
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      Serverless:
+        core_skills:
+          Programming: { requirement: Mandatory, level: Advanced }
+          "Algorithms & Data Structures": { requirement: Mandatory, level: Advanced }
+          Coding: { requirement: Mandatory, level: Advanced }
+          "System Design / scaling": { requirement: Needed, level: Intermediate }
+          Testing: { requirement: Needed, level: Intermediate }
+          Data: { requirement: Needed, level: Basic }
+          Databases: { requirement: Needed, level: Basic }
+          "Linux / UNIX": { requirement: Needed, level: Basic }
+          "Analysis techniques": { requirement: Needed, level: Basic }
+          "Command line": { requirement: Needed, level: Basic }
+          "System, constraints, how linux works": { requirement: Needed, level: Intermediate }
+        web_networking:
+          "APIs / System Design": { requirement: Mandatory, level: Advanced }
+          "Web Technologies / Troubleshooting": { requirement: Mandatory, level: Advanced }
+          "HTML / CSS / JS": { requirement: Mandatory, level: Advanced }
+          "HTTP and Auth": { requirement: Mandatory, level: Advanced }
+          "Webservers & frameworks": { requirement: Mandatory, level: Advanced }
+          Networking: { requirement: Needed, level: Intermediate }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Intermediate }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "CI/CD (continuous integration and continuous delivery/deployment)": Advanced
+          "Python or Java": "Nice-to-have"
+          "Analytical skills, reading and breaking down issues and code": Advanced
+          Docker: "Needed - Basic"
+          Kubernetes: "Needed - Basic"
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+  Data:
+    specializations:
+      "AI and ML":
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          "Algorithms & Data Structures": { requirement: Needed, level: Basic }
+          Coding: { requirement: Mandatory, level: Advanced }
+          "System Design / scaling": { requirement: Needed, level: Intermediate }
+          Testing: { requirement: Needed, level: Intermediate }
+          Data: { requirement: Mandatory, level: Advanced }
+          Databases: { requirement: Mandatory, level: Advanced }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Analysis techniques": { requirement: Mandatory, level: Advanced }
+          "Command line": { requirement: Needed, level: Basic }
+          "System, constraints, how linux works": { requirement: Needed, level: Basic }
+        web_networking:
+          "APIs / System Design": { requirement: Mandatory, level: Advanced }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTML / CSS / JS": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Basic }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "Effective Triage and Troubleshooting": "Mandatory - Advanced"
+          "SQL or BQL": "Mandatory - Advanced"
+          "Machine Learning and AI": "Needed - Intermediate"
+          "ETL or cluster tool (hadoop) or Distributed Computing": "Needed - Intermediate"
+          "Model Development Lifecycle": "Needed - Intermediate"
+          Python: "Needed - Intermediate"
+          "REST API": "Needed - Intermediate"
+          "Neural network architectures and tools (Tensorflow/Keras)": "Needed - Basic"
+          "Container Registry / Artifactory": "Needed - Basic"
+          "Understanding of Compute and GKE": "Needed - Basic"
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      "Data Analytics":
+        core_skills:
+          Programming: { requirement: Needed, level: Intermediate }
+          "Algorithms & Data Structures": { requirement: Needed, level: Basic }
+          Coding: { requirement: Mandatory, level: Advanced }
+          "System Design / scaling": { requirement: Mandatory, level: Advanced }
+          Testing: { requirement: Needed, level: Basic }
+          Data: { requirement: Mandatory, level: Advanced }
+          Databases: { requirement: Mandatory, level: Advanced }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Analysis techniques": { requirement: Mandatory, level: Advanced }
+          "Command line": { requirement: Needed, level: Basic }
+          "System, constraints, how linux works": { requirement: Mandatory, level: Advanced }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          Networking: { requirement: Needed, level: Basic }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "CAP theorem": Mandatory
+          SQL: "Mandatory - Medium"
+          "MapReduce (Hadoop, Spark, HDFS, etc)": "Mandatory - Intermediate"
+          "Batch/streaming pipelines": "Mandatory - Intermediate"
+          "APIs / System Design": "Mandatory - Intermediate"
+          "Messaging queue (Pub/Sub, Push/Pull, etc)": "Mandatory - Basic"
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+  Other:
+    specializations:
+      Apigee:
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          "System Design / scaling": { requirement: Needed, level: Basic }
+          Testing: { requirement: Needed, level: Basic }
+          Data: { requirement: Needed, level: Basic }
+          Databases: { requirement: Needed, level: Basic }
+          "Linux / UNIX": { requirement: Mandatory, level: Advanced }
+          "System, constraints, how linux works": { requirement: Mandatory, level: Advanced }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Basic }
+          "Web Technologies / Troubleshooting": { requirement: Mandatory, level: Advanced }
+          "HTML / CSS / JS": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Mandatory, level: Advanced }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Basic }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          Docker: "Needed - Advanced"
+          Kubernetes: "Needed - Advanced"
+          "Systems Architecture and Infrastructure": Advanced
+          "Analytical skills, reading and breaking down issues and code": Advanced
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      Looker:
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          "Algorithms & Data Structures": { requirement: Needed, level: Basic }
+          Coding: { requirement: Needed, level: Basic }
+          "System Design / scaling": { requirement: Needed, level: Basic }
+          Data: { requirement: Needed, level: Intermediate }
+          Databases: { requirement: Needed, level: Intermediate }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Analysis techniques": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Intermediate }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Intermediate }
+          "HTML / CSS / JS": { requirement: Needed, level: Basic }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Intermediate }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Intermediate }
+          "IP routing": { requirement: Needed, level: Intermediate }
+        additional:
+          SQL: "Mandatory - Advanced"
+          "Analytical skills, reading and breaking down issues and code": Advanced
+          "Data Analysis/BI tools": "Needed - Intermediate"
+          "Big Data Pipelines / Data Warehousing": "Needed - Intermediate"
+          "GIT / Version Control": "Needed - Intermediate"
+          "Site Reliability": "Needed - Intermediate"
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }
+
+      "Detection & Response":
+        core_skills:
+          Programming: { requirement: Needed, level: Basic }
+          Coding: { requirement: Needed, level: Basic }
+          Testing: { requirement: Needed, level: Basic }
+          Data: { requirement: Needed, level: Intermediate }
+          Databases: { requirement: Needed, level: Intermediate }
+          "Linux / UNIX": { requirement: Needed, level: Intermediate }
+          "Analysis techniques": { requirement: Needed, level: Intermediate }
+          "Command line": { requirement: Needed, level: Intermediate }
+          "System, constraints, how linux works": { requirement: Needed, level: Basic }
+        web_networking:
+          "APIs / System Design": { requirement: Needed, level: Intermediate }
+          "Web Technologies / Troubleshooting": { requirement: Needed, level: Intermediate }
+          "HTTP and Auth": { requirement: Needed, level: Intermediate }
+          "Webservers & frameworks": { requirement: Needed, level: Basic }
+          Networking: { requirement: Needed, level: Basic }
+          "TCP/IP troubleshooting": { requirement: Needed, level: Basic }
+          DNS: { requirement: Needed, level: Basic }
+          "IP routing": { requirement: Needed, level: Basic }
+        additional:
+          "Cloud Skills (GCP or any other: Orgs, Projects, Resources, IAM)": Intermediate
+          "General Cloud Security Best Practices": Intermediate
+          "Infrastructure as code": Basic
+          "Authentication Technologies": Basic
+          "Authorization Models": Basic
+          "Cyber Security Risks": Intermediate
+        soft_skills:
+          "Client Facing / Communication skills": { requirement: Mandatory, level: Advanced }
+          "English Proficiency": { requirement: Mandatory, level: Advanced }

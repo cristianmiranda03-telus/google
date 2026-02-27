@@ -1,0 +1,13 @@
+---
+description: Python package management - uv and Python 3.12 only
+globs: "**/*.py,pyproject.toml,uv.lock,**/requirements*.txt"
+alwaysApply: false
+---
+
+# Python Package Management (STRICT)
+
+- **Exclusively use uv** with **Python 3.12**. Never use pip, pip-tools, poetry, or conda.
+- Install/sync: `uv sync`, add dependency: `uv add <package>`.
+- Pin Python in `pyproject.toml`: `requires-python = ">=3.12,<3.13"`.
+- Run scripts: `uv run python ...` or `uv run uvicorn ...`.
+- Do not create or suggest `requirements.txt` for installs; use `pyproject.toml` + `uv.lock`.

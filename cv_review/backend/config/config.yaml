@@ -1,0 +1,20 @@
+# CV Review App - Configuration
+# Used for Google Team role evaluation
+
+app:
+  name: "CV Review - Google Team"
+  description: "Evaluate candidate CVs against Infrastructure, Networking, Platform, Data, and Other specializations."
+  max_file_size_mb: 10
+  supported_extensions: [".pdf", ".txt", ".docx"]
+
+api:
+  base_url: "https://api.fuelix.ai/v1"
+  model: "gemini-3-pro"  # override with FUELIX_MODEL in .env
+  fast_model: "gemini-3-flash"  # used for batch/multi-file analysis (override with FUELIX_FAST_MODEL)
+  timeout_seconds: 120
+  max_retries: 2
+
+evaluation:
+  score_scale: 100  # 0-100%
+  temperature: 0.1  # low = strict, accurate profile matching (e.g. AI background → Data Advanced)
+  output_format: "json"  # for structured scores

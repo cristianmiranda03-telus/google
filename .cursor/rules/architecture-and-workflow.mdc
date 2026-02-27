@@ -1,0 +1,11 @@
+---
+description: Decoupled architecture, streaming Chat API, Makefile, Docker
+alwaysApply: true
+---
+
+# Decoupled Architecture & Workflow
+
+- **Backend and frontend are strictly decoupled.** State via Pydantic and local `agents.json` only; no SQL databases.
+- **Chat API**: Use FastAPI `StreamingResponse` (Server-Sent Events) to stream Gemini output **token-by-token**.
+- **Developer workflow**: Prefer running tasks via the **Makefile** (e.g. `make dev`, `make test`).
+- **Docker**: Two separate Dockerfiles — `frontend/Dockerfile` and `backend/Dockerfile`. Backend base image MUST be `python:3.12-slim`. Backend MUST bind to the `$PORT` environment variable (e.g. for Cloud Run).

@@ -1,0 +1,37 @@
+---
+description: Code style and documentation - PEP 8, Google docstrings, OpenAPI, JSDoc
+globs: "**/*.py,**/*.ts,**/*.tsx,**/*.js,**/*.jsx"
+alwaysApply: false
+---
+
+# Code Style & Documentation (STRICT)
+
+## Python
+- Follow **PEP 8** for formatting.
+- All functions, classes, and modules MUST have **PEP 257** docstrings in **Google format**:
+  - Use `Args:`, `Returns:`, `Raises:` with types and descriptions.
+
+Example:
+```python
+def process(id: str, limit: int) -> list[Item]:
+    """Fetch and process items by id.
+
+    Args:
+        id: Resource identifier.
+        limit: Maximum number of items.
+
+    Returns:
+        List of processed Item instances.
+
+    Raises:
+        ValueError: If id is empty.
+    """
+```
+
+## API (FastAPI)
+- Generate **OpenAPI (Swagger)** schemas for all routes.
+- Use **Pydantic models** for request/response bodies and document them in the schema.
+
+## Frontend (JavaScript/TypeScript)
+- All JS/TS functions, React components, and complex types MUST use **JSDoc** (`/** ... */`).
+- Include `@param`, `@returns`, `@typedef` where relevant.
