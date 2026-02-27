@@ -2,7 +2,7 @@
 # Builds backend and frontend from Dockerfiles, pushes to Artifact Registry, deploys to Cloud Run (europe-west1).
 # Substitute _PROJECT_ID and _REGION when creating the trigger.
 substitutions:
-  _PROJECT_ID: your-gcp-project-id
+  _PROJECT_ID: telsalprofessors-dev
   _REGION: europe-west1
   _SERVICE_NAME: goog-demo-cv0
   _REPO_NAME: cv_review
