@@ -1,24 +1,19 @@
-# Cloud Run build configuration
+# Cloud Run build — one shot
 
-Your build failed because the **Dockerfile path** was set to `backend` (a directory). It must be a path to a **file**.
+Use **Cloud Build with the config file** so you don’t set Dockerfile path or context by hand.
 
-## Fix in Google Cloud Console
+1. **Cloud Build** → **Triggers** → Create (or edit) trigger.
+2. **Configuration**: **Cloud Build configuration file (repo)**.
+3. **Location**: **`cloudrun/cloudbuild-single.yaml`**.
+4. **Substitutions**: `_PROJECT_ID`, `_REGION`, `_REPO_NAME` (see [cloudrun/DEPLOY.md](cloudrun/DEPLOY.md)).
 
-1. Open **Cloud Build** → **Triggers** (or **Cloud Run** → your service → **Set up continuous deployment**).
-2. Edit the trigger that builds from `jimenezcr-alt/google`.
-3. **Build configuration**:
-   - **Dockerfile path**: set to **`backend/Dockerfile`** (or **`Dockerfile`** if you use the root Dockerfile).
-   - **Build context / Directory**: set to **`backend`** if using `backend/Dockerfile`, or **`.`** (root) if using root **`Dockerfile`**.
+That’s it. One deploy, one link: **https://goog-demo-cv0-464316124240.europe-west1.run.app**
 
-So use **one** of these:
+---
 
-| Dockerfile path       | Build context / Directory |
-|----------------------|----------------------------|
-| `backend/Dockerfile` | `backend`                  |
-| `Dockerfile`         | `.` (root)                 |
+If you were using “Deploy from repository” with a **Dockerfile path** field instead of a config file:
 
-4. Save and run the trigger again.
+- **Dockerfile path**: `Dockerfile.app`
+- **Build context / Directory**: `.` (repo root)
 
-## Root Dockerfile
-
-A **`Dockerfile`** at the repo root is provided. If your trigger uses the repo root as context, set Dockerfile path to **`Dockerfile`** and directory to **`.`** so the build uses this file and succeeds.
+But using **`cloudrun/cloudbuild-single.yaml`** is preferred (one config, no extra setup).

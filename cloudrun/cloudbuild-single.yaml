@@ -1,0 +1,51 @@
+# Single deploy: one image, one Cloud Run service. One link = full app.
+# Connect repo to Cloud Build and set trigger to this file.
+# Substitutions: _PROJECT_ID (e.g. telsalprofessors-dev), _REGION=europe-west1, _REPO_NAME=cv_review
+substitutions:
+  _PROJECT_ID: your-gcp-project-id
+  _REGION: europe-west1
+  _REPO_NAME: cv_review
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/app:${SHORT_SHA}
+      - -t
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/app:latest
+      - -f
+      - Dockerfile.app
+      - .
+    dir: .
+
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/app:${SHORT_SHA}
+    waitFor: [build]
+
+  - id: deploy
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - goog-demo-cv0
+      - --image
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/app:${SHORT_SHA}
+      - --region
+      - ${_REGION}
+      - --platform
+      - managed
+      - --allow-unauthenticated
+    waitFor: [push]
+
+images:
+  - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/app:${SHORT_SHA}
+  - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/app:latest

@@ -1,0 +1,12 @@
+# For Dockerfile.app single-image build (reduce context size)
+cv_review/frontend/node_modules
+cv_review/frontend/.next
+cv_review/frontend/out
+cv_review/backend/__pycache__
+cv_review/backend/data
+.git
+.venv
+venv
+*.md
+.env
+.env.*

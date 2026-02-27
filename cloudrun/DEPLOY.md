@@ -1,189 +1,88 @@
-# Cloud Run deployment (GitHub connection)
+# Deploy CV Review — one link, one deploy
 
-Deploy **goog-demo-cv0** (backend) and **goog-demo-cv0-frontend** (frontend) to **europe-west1**. Use the **full-app** config so one link shows the UI.
-
----
-
-## Deploy full app (frontend + backend) — one link to use the app
-
-To have **one URL that shows the CV Review UI** (and a separate backend URL for the API):
-
-1. Use the **full-app** Cloud Build config: **`cloudrun/cloudbuild-app.yaml`**.
-2. In **Cloud Build** → **Triggers**, create or edit a trigger:
-   - **Configuration**: Cloud Build configuration file (repo)
-   - **Location**: `cloudrun/cloudbuild-app.yaml`
-   - **Substitution variables**: `_PROJECT_ID` = your GCP project ID, `_REGION` = `europe-west1`, `_REPO_NAME` = `cv_review`
-3. Run the trigger (push to branch or Run manually).
-
-After the build finishes you will have:
-
-- **Backend (API)**: `https://goog-demo-cv0-<PROJECT_NUMBER>.europe-west1.run.app` — use for `/docs`, `/api/health`, etc.
-- **Frontend (app UI)**: `https://goog-demo-cv0-frontend-<PROJECT_NUMBER>.europe-west1.run.app` — **open this link to use the app.**
-
-The frontend is built with the backend URL baked in, so the UI will call your backend API automatically.
+**One Cloud Run service.** Open **https://goog-demo-cv0-464316124240.europe-west1.run.app** and you get the full app (frontend + API). No second URL, no extra configuration.
 
 ---
 
-## 1. Prerequisites
+## 1. One-time setup
 
-- Google Cloud project with **Cloud Run**, **Artifact Registry**, and **Cloud Build** enabled.
-- GitHub repo: **goog-ac/cv_review** (or your fork; adjust `_REPO_NAME` / trigger repo).
-
----
-
-## 2. One-time setup
-
-### 2.1 Create Artifact Registry repository
+### 1.1 Artifact Registry
 
 ```bash
 gcloud artifacts repositories create cv_review \
   --repository-format=docker \
   --location=europe-west1 \
-  --description="CV review app images"
+  --project=telsalprofessors-dev
 ```
 
-### 2.2 Connect GitHub to Cloud Build
+(Skip if it already exists.)
 
-1. Open **Cloud Build** → **Triggers** in the Google Cloud Console.
-2. Click **Connect repository** (or **Manage connected repositories**).
-3. Choose **GitHub (Cloud Build GitHub App)** or **GitHub (Mirror)**.
-4. Authenticate and select the **goog-ac/cv_review** repository (or the org/repo where the code lives).
-5. Complete the connection so the repo appears under “Connected repositories”.
+### 1.2 Connect GitHub to Cloud Build
 
-### 2.3 Create the Cloud Build trigger
+1. [Cloud Build → Triggers](https://console.cloud.google.com/cloud-build/triggers).
+2. **Connect repository** → pick your GitHub repo.
+3. Finish the connection.
 
-Create a trigger that runs `cloudrun/cloudbuild.yaml` on push (e.g. `main`):
+### 1.3 Create the trigger (single deploy)
 
-| Field | Value |
-|--------|--------|
-| **Name** | `deploy-goog-demo-cv0` (or any name) |
-| **Event** | Push to a branch |
-| **Source** | **goog-ac/cv_review** (your connected repo) |
-| **Branch** | `^main$` (or your default branch) |
-| **Configuration** | Cloud Build configuration file (repo) |
-| **Location** | `cloudrun/cloudbuild.yaml` |
-| **Substitution variables** | See below |
+1. **Create trigger**.
+2. **Name**: e.g. `deploy-goog-demo-cv0`.
+3. **Event**: Push to a branch.
+4. **Source**: Your connected repo. **Branch**: `^main$` (or your default).
+5. **Configuration**: **Cloud Build configuration file (repo)**.
+6. **Location**: **`cloudrun/cloudbuild-single.yaml`**.
+7. **Substitution variables**:
 
-**Substitution variables** (required):
+   | Name          | Value                 |
+   |---------------|-----------------------|
+   | `_PROJECT_ID` | `telsalprofessors-dev` |
+   | `_REGION`     | `europe-west1`        |
+   | `_REPO_NAME`  | `cv_review`           |
 
-| Variable | Value |
-|----------|--------|
-| `_PROJECT_ID` | Your GCP project ID |
-| `_REGION` | `europe-west1` |
-| `_SERVICE_NAME` | `goog-demo-cv0` |
-| `_REPO_NAME` | `cv_review` (Artifact Registry repo name) |
-
-Save the trigger.
-
-### 2.4 Service account permissions
-
-The Cloud Build service account (e.g. `PROJECT_NUMBER@cloudbuild.gserviceaccount.com`) needs:
-
-- **Cloud Run Admin** (`roles/run.admin`)
-- **Service Account User** (`roles/iam.serviceAccountUser`) on the default Compute Engine or Cloud Run runtime SA
-- **Artifact Registry Writer** (`roles/artifactregistry.writer`) on the `europe-west1` Artifact Registry repo
-
-Grant in IAM or via:
-
-```bash
-PROJECT_ID=your-gcp-project-id
-PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
-REPO=europe-west1-docker.pkg.dev/$PROJECT_ID/cv_review
-
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="serviceAccount:${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com" \
-  --role="roles/run.admin"
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="serviceAccount:${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com" \
-  --role="roles/iam.serviceAccountUser"
-gcloud artifacts repositories add-iam-policy-binding cv_review \
-  --location=europe-west1 \
-  --member="serviceAccount:${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com" \
-  --role="roles/artifactregistry.writer"
-```
+8. Save.
 
 ---
 
-## 3. Build configuration (exact)
+## 2. Deploy
 
-All deployment is forced through Cloud Run and the config in this directory.
+- **Option A**: Push to the branch the trigger watches → build and deploy run automatically.
+- **Option B**: In Triggers, open the trigger → **Run**.
 
-| Item | Value |
-|------|--------|
-| **Cloud Build config file** | `cloudrun/cloudbuild.yaml` |
-| **Backend Dockerfile path** | `backend/Dockerfile` |
-| **Backend build context** | `backend/` (directory) |
-| **Frontend Dockerfile path** | `frontend/Dockerfile` |
-| **Frontend build context** | `frontend/` (directory) |
-| **Region** | `europe-west1` |
-| **Backend service name** | `goog-demo-cv0` |
-| **Frontend service name** | `goog-demo-cv0-frontend` |
-| **Artifact Registry repo** | `cv_review` in `europe-west1` |
-| **Backend image** | `europe-west1-docker.pkg.dev/PROJECT_ID/cv_review/backend:SHORT_SHA` and `:latest` |
-| **Frontend image** | `europe-west1-docker.pkg.dev/PROJECT_ID/cv_review/frontend:SHORT_SHA` and `:latest` |
+When the build finishes, open:
 
-Backend container listens on **$PORT** (Cloud Run sets this; default 8080). Base image: **python:3.12-slim**.
+**https://goog-demo-cv0-464316124240.europe-west1.run.app**
+
+You get the app UI (upload CVs, dashboard, etc.). API docs: **/docs**, health: **/api/health**.
 
 ---
 
-## 3.1 Set Fuelix API key (and other env vars) in Cloud Run
+## 3. Fuelix API key (Cloud Run)
 
-The backend reads **FUELIX_API_KEY** (or **FUELIX_SECRET_TOKEN**) from the environment. Set it on the Cloud Run service so the API can call Fuelix.
+Set the API key as an environment variable on the service:
 
-1. Open **Cloud Run** in Google Cloud Console.
-2. Click the service **goog-demo-cv0**.
-3. Open the **Edit & deploy new revision** tab (or **Edit**).
-4. Expand **Variables & secrets** (or **Container, Variables & secrets**).
-5. Under **Environment variables**, add:
-   - **Name**: `FUELIX_API_KEY`
-   - **Value**: your Fuelix API key (or use **Reference a secret** if you store it in Secret Manager).
-6. Optionally add:
-   - `FUELIX_MODEL` (default: gemini-3-pro)
-   - `FUELIX_FAST_MODEL` (default: gemini-2.0-flash)
-   - `FUELIX_BASE_URL` (default: https://api.fuelix.ai/v1)
-7. Deploy the new revision.
+1. **Cloud Run** → service **goog-demo-cv0** → **Edit & deploy new revision**.
+2. **Variables & secrets** → **Add variable** → Name: `FUELIX_API_KEY`, Value: your key.
+3. Deploy.
 
-**gcloud (one-off):**
+Or with gcloud:
 
 ```bash
 gcloud run services update goog-demo-cv0 \
   --region=europe-west1 \
-  --set-env-vars="FUELIX_API_KEY=your-secret-key-here"
+  --set-env-vars="FUELIX_API_KEY=your-key" \
+  --project=telsalprofessors-dev
 ```
 
 ---
 
-## 4. Deploy via GitHub
+## Summary
 
-1. Push to the branch that the trigger watches (e.g. `main`).
-2. Cloud Build runs `cloudrun/cloudbuild.yaml`: builds both images, pushes to Artifact Registry, deploys both services to **europe-west1**.
-3. Backend URL: `https://goog-demo-cv0-<hash>-ew.a.run.app` (see Cloud Run console).
+| Item | Value |
+|------|--------|
+| **Config file** | `cloudrun/cloudbuild-single.yaml` |
+| **Dockerfile** | `Dockerfile.app` (repo root) |
+| **Service** | `goog-demo-cv0` |
+| **Region** | `europe-west1` |
+| **App URL** | https://goog-demo-cv0-464316124240.europe-west1.run.app |
 
-To run the trigger manually: Cloud Build → Triggers → select trigger → **Run**.
-
----
-
-## 5. Deploy with local YAML (optional)
-
-If you build images elsewhere and want to deploy using the service YAMLs:
-
-1. Replace `PROJECT_ID` in `backend-service.yaml` / `frontend-service.yaml` with your project ID and set the correct image URLs.
-2. Deploy:
-
-```bash
-gcloud run services replace cloudrun/backend-service.yaml --region=europe-west1
-gcloud run services replace cloudrun/frontend-service.yaml --region=europe-west1
-```
-
----
-
-## 6. Summary
-
-- **Repository (GitHub)**: goog-ac/cv_review  
-- **Config that forces Cloud Run deployment**: `cloudrun/cloudbuild.yaml` + `cloudrun/*-service.yaml`  
-- **Dockerfile locations**: `backend/Dockerfile`, `frontend/Dockerfile`  
-- **Region**: europe-west1  
-- **Backend service**: goog-demo-cv0  
-- **Frontend service**: goog-demo-cv0-frontend  
-
-All builds and deploys use the above; no SQL, state via Pydantic and local `agents.json` only.
+One deploy, one link, no extra configuration.

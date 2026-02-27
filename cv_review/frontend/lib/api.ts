@@ -1,9 +1,16 @@
 import axios from "axios";
 import type { AnalysesList, AnalysisRecord, BestCandidates, JobStatus, Metrics } from "./types";
 
-export const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// Same origin when empty (single Cloud Run URL); fallback for local dev / SSR
+const raw = process.env.NEXT_PUBLIC_API_URL;
+export const API_BASE =
+  raw !== undefined && raw !== ""
+    ? raw
+    : typeof window !== "undefined"
+      ? ""
+      : "http://localhost:8000";
 
-const api = axios.create({ baseURL: API_BASE });
+const api = axios.create({ baseURL: API_BASE || undefined });
 
 export async function uploadCV(file: File): Promise<{ job_id: string }> {
   const form = new FormData();

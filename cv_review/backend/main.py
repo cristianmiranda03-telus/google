@@ -20,7 +20,7 @@ except ImportError:
 
 from fastapi import BackgroundTasks, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import Response
+from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel
 
 from config.settings import get_settings
@@ -45,15 +45,8 @@ storage = Storage(data_dir=PROJECT_ROOT / "data")
 # In-memory job registry (temporary, until completion)
 jobs: Dict[str, Dict[str, Any]] = {}
 
-
-@app.get("/")
-async def root():
-    """Root route so Cloud Run URL does not return 404."""
-    return {
-        "message": "CV Review API",
-        "docs": "/docs",
-        "health": "/api/health",
-    }
+# When running in Cloud Run (or Docker), frontend static files are in PROJECT_ROOT / "static"
+STATIC_DIR = PROJECT_ROOT / "static"
 
 
 async def run_analysis(
@@ -382,3 +375,26 @@ async def report_candidates(
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
+
+# ── Serve frontend (static) when STATIC_DIR exists; must be last so /api routes take precedence ──
+
+@app.get("/{full_path:path}")
+async def serve_app(full_path: str):
+    """Serve frontend static files or index.html for SPA routing. /api/* is handled above."""
+    if full_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="Not Found")
+    path = (full_path or "").strip("/") or "index.html"
+    if STATIC_DIR.exists():
+        file_path = (STATIC_DIR / path).resolve()
+        try:
+            if file_path.is_file() and file_path.parent.resolve().is_relative_to(STATIC_DIR.resolve()):
+                return FileResponse(file_path)
+        except ValueError:
+            pass
+        index_path = STATIC_DIR / "index.html"
+        if index_path.is_file():
+            return FileResponse(index_path, media_type="text/html")
+    if path in ("", "index.html"):
+        return {"message": "CV Review API", "docs": "/docs", "health": "/api/health"}
+    raise HTTPException(status_code=404, detail="Not Found")
