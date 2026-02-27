@@ -1,6 +1,26 @@
 # Cloud Run deployment (GitHub connection)
 
-Deploy **goog-demo-cv0** to **europe-west1** using a GitHub-connected Cloud Build trigger. All builds and deploys are driven by the config in this directory.
+Deploy **goog-demo-cv0** (backend) and **goog-demo-cv0-frontend** (frontend) to **europe-west1**. Use the **full-app** config so one link shows the UI.
+
+---
+
+## Deploy full app (frontend + backend) — one link to use the app
+
+To have **one URL that shows the CV Review UI** (and a separate backend URL for the API):
+
+1. Use the **full-app** Cloud Build config: **`cloudrun/cloudbuild-app.yaml`**.
+2. In **Cloud Build** → **Triggers**, create or edit a trigger:
+   - **Configuration**: Cloud Build configuration file (repo)
+   - **Location**: `cloudrun/cloudbuild-app.yaml`
+   - **Substitution variables**: `_PROJECT_ID` = your GCP project ID, `_REGION` = `europe-west1`, `_REPO_NAME` = `cv_review`
+3. Run the trigger (push to branch or Run manually).
+
+After the build finishes you will have:
+
+- **Backend (API)**: `https://goog-demo-cv0-<PROJECT_NUMBER>.europe-west1.run.app` — use for `/docs`, `/api/health`, etc.
+- **Frontend (app UI)**: `https://goog-demo-cv0-frontend-<PROJECT_NUMBER>.europe-west1.run.app` — **open this link to use the app.**
+
+The frontend is built with the backend URL baked in, so the UI will call your backend API automatically.
 
 ---
 
