@@ -1,0 +1,95 @@
+# Deploy full CV Review app: backend (goog-demo-cv0) + frontend (goog-demo-cv0-frontend).
+# Frontend is built with NEXT_PUBLIC_API_URL = backend Cloud Run URL so "click the link" shows the app.
+# Set trigger substitutions: _PROJECT_ID (GCP project ID), _REGION=europe-west1.
+# Backend URL is inferred: https://goog-demo-cv0-${PROJECT_NUMBER}.${_REGION}.run.app
+substitutions:
+  _PROJECT_ID: your-gcp-project-id
+  _REGION: europe-west1
+  _REPO_NAME: cv_review
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  # ---------- Backend (cv_review/backend) ----------
+  - id: build-backend
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/backend:${SHORT_SHA}
+      - -t
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/backend:latest
+      - -f
+      - cv_review/backend/Dockerfile
+      - cv_review/backend
+    dir: .
+
+  - id: push-backend
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/backend:${SHORT_SHA}
+    waitFor: [build-backend]
+
+  - id: deploy-backend
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - goog-demo-cv0
+      - --image
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/backend:${SHORT_SHA}
+      - --region
+      - ${_REGION}
+      - --platform
+      - managed
+      - --allow-unauthenticated
+    waitFor: [push-backend]
+
+  # ---------- Frontend (cv_review/frontend) - backend URL so app works ----------
+  - id: build-frontend
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --build-arg
+      - NEXT_PUBLIC_API_URL=https://goog-demo-cv0-${PROJECT_NUMBER}.${_REGION}.run.app
+      - -t
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/frontend:${SHORT_SHA}
+      - -t
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/frontend:latest
+      - -f
+      - cv_review/frontend/Dockerfile
+      - cv_review/frontend
+    dir: .
+    waitFor: [deploy-backend]
+
+  - id: push-frontend
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/frontend:${SHORT_SHA}
+    waitFor: [build-frontend]
+
+  - id: deploy-frontend
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - goog-demo-cv0-frontend
+      - --image
+      - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/frontend:${SHORT_SHA}
+      - --region
+      - ${_REGION}
+      - --platform
+      - managed
+      - --allow-unauthenticated
+    waitFor: [push-frontend]
+
+images:
+  - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/backend:${SHORT_SHA}
+  - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/backend:latest
+  - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/frontend:${SHORT_SHA}
+  - ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/frontend:latest
